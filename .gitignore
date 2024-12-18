@@ -1,0 +1,15 @@
+#folders
+target
+
+#files
+*.env
+.env*
+*.log
+!.env.example
+
+#OSX
+.DS_Store
+env.list
+
+#visual-studio-code
+.vscode/
