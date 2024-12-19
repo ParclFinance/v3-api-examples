@@ -2492,7 +2492,7 @@ checksum = "e2355d85b9a3786f481747ced0e0ff2ba35213a1f9bd406ed906554d7af805a1"
 [[package]]
 name = "parcl-v3-api-client"
 version = "0.0.0"
-source = "git+https://github.com/ParclFinance/v3-api-client-rs.git?rev=f207e78#f207e78ecc3f2f42f7a4bf6735a95645e4efb565"
+source = "git+https://github.com/ParclFinance/v3-api-client-rs.git?rev=25a872a#25a872a2e995194bafdc6d7c34568d4d81a4e5f3"
 dependencies = [
  "anyhow",
  "base64 0.21.7",
