@@ -19,6 +19,21 @@ async fn main() -> Result<()> {
     let size_delta = -20; // 0.00002 SOL short
     let slippage_setting = SlippageSetting::SlippageToleranceBps(200); // 2%
 
+    // Fetch trade quote:
+    // Your bot can validate quote data is okay before executing the trade.
+    // See docs link below and click on response schema for explanations for each quote field.
+    // https://v3.parcl-api.com/docs/#/Quotes/modify_position_quote_handler
+    let quote = v3_api_client
+        .get_modify_position_quote(
+            wallet.pubkey(),
+            margin_account_id,
+            market_id,
+            size_delta,
+            slippage_setting,
+        )
+        .await?;
+    println!("Quote: {quote:#?}");
+
     // Fetch trade transaction and latest blockhash.
     let (api_response, latest_blockhash) = {
         let (api_response, latest_blockhash) = tokio::join!(
