@@ -9,6 +9,14 @@ Example interactions with the v3-api using various clients.
 
 Api and client libraries are in alpha. Code may change.
 
+Set environment variables in a .env file in the root of the repo. See example file ".env.example"
+
+```.env
+WALLET_PRIVATE_KEY=
+API_URL= # OPTIONAL
+RPC_URL= # OPTIONAL
+```
+
 ## Additional Resources
 
 - [OpenAPI Documentation](https://v3.parcl-api.com/docs): See available routes.
