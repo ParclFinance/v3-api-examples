@@ -20,7 +20,7 @@ pub fn deserialize_tx_set_recent_blockhash_and_sign_message<T: Signer>(
     let mut tx: VersionedTransaction = bincode::deserialize(&tx)?;
     tx.message.set_recent_blockhash(latest_blockhash);
     let sig = signer.sign_message(&tx.message.serialize());
-    tx.signatures.clear();
+    tx.signatures.clear(); // clears dummy sigs
     tx.signatures.push(sig);
     Ok(tx)
 }

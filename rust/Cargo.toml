@@ -10,7 +10,7 @@ anyhow = "1"
 bincode = "1.3.3"
 clap = { version = "4.4.3", features = ["derive"] }
 dotenvy = "0.15.7"
-parcl-v3-api-client = { git = "https://github.com/ParclFinance/v3-api-client-rs.git", rev = "25a872a", package = "parcl-v3-api-client" }
+parcl-v3-api-client = { git = "https://github.com/ParclFinance/v3-api-client-rs.git", rev = "1e5f4de", package = "parcl-v3-api-client" }
 tokio = { version = "1", features = ["full"] }
 solana-sdk = "2"
 solana-client = "2"
