@@ -20,5 +20,6 @@ RPC_URL= # OPTIONAL
 ## Additional Resources
 
 - [OpenAPI Documentation](https://v3.parcl-api.com/docs): See available routes.
+- [Typescript Client](https://github.com/ParclFinance/v3-api-client-ts)
 - [Rust Client](https://github.com/ParclFinance/v3-api-client-rs)
 - [Parcl Website](https://parcl.co): Check out the official Parcl website for additional information and resources.

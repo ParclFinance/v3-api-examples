@@ -1,5 +1,6 @@
 #folders
 target
+node_modules
 
 #files
 *.env
